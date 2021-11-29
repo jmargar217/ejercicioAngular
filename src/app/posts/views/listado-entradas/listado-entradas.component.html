@@ -1,0 +1,18 @@
+<h1>Listado de Posts:</h1>
+
+<div id="listado">
+    <div class="row">
+        <p class="col">Fecha: {{fecha}}</p>
+        <p class="col">Contador de posts: {{contador}}</p>
+    </div>
+    <ul>
+        <li *ngFor="let posts of posts">
+            <div id="separador"></div>
+            <h4><b>Titulo: {{posts.titulo}}</b> </h4>
+            <h4><b>Autor: {{posts.autor}}</b> </h4>
+            <p>
+                <b>Contenido:<br>{{posts.contenido}}</b>
+            </p>
+        </li>
+    </ul>
+</div><br>
